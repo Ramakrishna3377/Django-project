@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="4px">
+        <tr style="padding:3px;">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>User</th>
+                <th>DOB</th>
+                <th>Gender</th>
+            </thead>
+        </tr>
+        {% for record in records %}
+        <tr style="padding: 5px;">
+            <tbody>
+                <td>{{record.id}}</td>
+                <td>{{record.name}}</td>
+                <td>{{record.user}}</td>
+                <td>{{record.DOB}}</td>
+                <td>{{record.gender}}</td>
+            </tbody>
+        </tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    {% for card in  cards %}
+    <div style="background-image:repeating-linear-gradient(#0084ff,pink);width: 270px;height: 150px;">
+        <pre>      <h3 style="margin-left:15px ;">{{card.name}}</h3>  User_Name: <label>{{card.user}}</label>
+  DOB    : <label>{{card.DOB}}</label>                       
+  Gender : <label>{{card.gender}}</label><br> <img  src="{{card.profile}}"  width="60px" height="60px" style="float: right;margin-top: 100px;margin-right: 15px;"/>
+
+                                        
+</pre>
+  <!-- <div style="background-color:aliceblue;width: 60px;height: 60px;float:right;margin-top:90px;margin-right: 20px;">
+    <img  src="{{record.profile}}"  width="60px" height="60px"/>
+
+  </div> -->
+</div>
+    {% endfor %}
+
+</body>
+</html>
